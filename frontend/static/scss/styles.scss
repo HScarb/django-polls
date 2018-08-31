@@ -8,7 +8,7 @@ $breadcrumb-divider: quote(">");
 $pad-top: 56px;
 $pad-left: 180px;
 
-$top-right-nav-width: calc(100% - $pad-left);
+$top-right-nav-width: calc(100% - 180px);
 
 .top-header .right-navbar {
     width: $top-right-nav-width;
@@ -18,11 +18,11 @@ $top-right-nav-width: calc(100% - $pad-left);
 
 .left-sidebar {
     background-color: #333744;
-    width: $pad-left;
+    width: 56px;
     left: 0;
     position: fixed;
     height: 100%;
-    margin-top: $pad-top;
+    margin-top: 180px;
     box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
 }
 
@@ -59,9 +59,9 @@ $top-right-nav-width: calc(100% - $pad-left);
 .content {
     position: relative;
     left: 0;
-    margin-left: $pad-left;
+    margin-left: 180px;
     min-height: 100%;
-    padding-top: $pad-top;
+    padding-top: 56px;
 }
 
 .content .page-title .nav-link {
