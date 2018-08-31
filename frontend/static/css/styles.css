@@ -1,13 +1,13 @@
 .top-header .right-navbar {
-  width: calc(100% - $pad-left); }
+  width: calc(100% - 180px); }
 
 .left-sidebar {
   background-color: #333744;
-  width: 180px;
+  width: 56px;
   left: 0;
   position: fixed;
   height: 100%;
-  margin-top: 56px;
+  margin-top: 180px;
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1); }
 
 .left-sidebar .left-sidebar-wrapper {
