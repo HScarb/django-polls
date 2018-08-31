@@ -1,5 +1,5 @@
-$bg-color: blue;
+$top-right-nav-width: calc(100% - 160px);
 
-body {
-    background: $bg-color;
+.top-header .right-navbar {
+    width: $top-right-nav-width;
 }

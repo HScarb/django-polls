@@ -26,7 +26,7 @@ gulp.task('serve', ['sass'], function() {
         server: appPath + "templates"
     });
 
-    gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'static/scss/*.scss'], ['sass']);
+    gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', appPath + 'static/scss/*.scss'], ['sass']);
     gulp.watch(appPath + "templates/*.html").on('change', browserSync.reload);
 });
 

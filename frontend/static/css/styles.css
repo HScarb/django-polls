@@ -1,2 +1,2 @@
-body {
-  background: blue; }
+.top-header .right-navbar {
+  width: calc(100% - 160px); }
