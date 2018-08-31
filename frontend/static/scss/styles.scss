@@ -3,22 +3,26 @@ $theme-colors: (
     "primary": #41cac0,
     "dark": #373d41
 );
+$breadcrumb-divider: quote(">");
 
-$top-right-nav-width: calc(100% - 160px);
+$pad-top: 56px;
+$pad-left: 180px;
+
+$top-right-nav-width: calc(100% - $pad-left);
 
 .top-header .right-navbar {
     width: $top-right-nav-width;
 }
 
-// side bar
+// left sidebar
 
 .left-sidebar {
     background-color: #333744;
-    width: 180px;
+    width: $pad-left;
     left: 0;
     position: fixed;
     height: 100%;
-    margin-top: 56px;
+    margin-top: $pad-top;
     box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
 }
 
@@ -51,6 +55,30 @@ $top-right-nav-width: calc(100% - 160px);
     width: 100%;
 }
 
+// content
+.content {
+    position: relative;
+    left: 0;
+    margin-left: $pad-left;
+    min-height: 100%;
+    padding-top: $pad-top;
+}
 
+.content .page-title .nav-link {
+    color: #333;
+}
+
+.content .page-title .active {
+    color: #41cac0;
+}
+
+// content page
+.content-page-wrapper {
+    padding-top: 15px;
+}
+
+.content-page-wrapper .btn-primary {
+    color: #fff;
+}
 
 @import "node_modules/bootstrap/scss/bootstrap";

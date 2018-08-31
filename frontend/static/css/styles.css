@@ -1,5 +1,5 @@
 .top-header .right-navbar {
-  width: calc(100% - 160px); }
+  width: calc(100% - $pad-left); }
 
 .left-sidebar {
   background-color: #333744;
@@ -31,6 +31,25 @@
 
 .left-sidebar li {
   width: 100%; }
+
+.content {
+  position: relative;
+  left: 0;
+  margin-left: 180px;
+  min-height: 100%;
+  padding-top: 56px; }
+
+.content .page-title .nav-link {
+  color: #333; }
+
+.content .page-title .active {
+  color: #41cac0; }
+
+.content-page-wrapper {
+  padding-top: 15px; }
+
+.content-page-wrapper .btn-primary {
+  color: #fff; }
 
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
@@ -3290,7 +3309,7 @@ input[type="button"].btn-block {
     display: inline-block;
     padding-right: 0.5rem;
     color: #6c757d;
-    content: "/"; }
+    content: ">"; }
 
 .breadcrumb-item + .breadcrumb-item:hover::before {
   text-decoration: underline; }
